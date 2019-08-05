@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>Avalon Templar</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="A Dashboard template with Bootstrap 4">
+        <meta name="language" content="English">
+        <meta name="keywords" content="dashboard,template,bootstrap,html,css,js">
+        <meta name="author" content="Adeyinka Adefolurin">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/morrisjs/morris.css"></script>
+        <link rel="stylesheet" href="assets/css/media.css">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+        <noscript>
+            <meta http-equiv="refresh" content="5; URL=http://www.enable-javascript.com">
+            Your browser does not support JavaScript. Please follow the next steps to enable it.
+        </noscript>
+	</head>
+	<body>
+		<div class="top-nav"></div>
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="tables.html"><i class="fa fa-th"></i> Tables</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="charts.html"><i class="fa fa-bar-chart-o"></i> Charts</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="panels.html"><i class="fa fa-lemon-o"></i> Panels and Wells</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="buttons.html"><i class="fa fa-power-off"></i> Buttons</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="icons.html"><i class="fa fa-flag"></i> Icons</a>
+					</li>
+					<span class="topmenu-subsets">
+						<li class="nav-item">
+							<a class="nav-link" href="notifications.html"><i class="fa fa-inbox"></i> Notifications</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="profile.html"><i class="fa fa-user"></i> John Doe</a>
+						</li>
+					</span>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container main-content">
+			<ul class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+				<li class="breadcrumb-item"><a href="tables.html">Tables</a></li>
+				<li class="breadcrumb-item active">Charts</li>
+			</ul>
+
+			<h4 class="text-center font-weight-bold">Morris Charts</h4>
+			<div class="hr" style="margin: -10px;"><hr></div>
+
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="panel panel-green">
+						<div class="panel-heading">
+							<h5><i class="fa fa-heart"></i> Area Chart
+								<span class="pull-right">
+									<div class="dropdown">
+										<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+											Actions
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</span>
+							</h5>
+						</div>
+						<div class="panel-body">
+							<div id="morris-area-chart"></div>
+						</div>
+						<div class="panel-footer">
+							<a href="#">View Details 
+								<span class="pull-right"><i class="fa fa-arrow-right"></i></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="panel panel-blue">
+						<div class="panel-heading">
+							<h5><i class="fa fa-circle"></i> Donut Chart
+								<span class="pull-right">
+									<div class="dropdown">
+										<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+											Actions
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</span>
+							</h5>
+						</div>
+						<div class="panel-body">
+							<div id="morris-donut-chart"></div>
+						</div>
+						<div class="panel-footer">
+							<a href="#">View Details 
+								<span class="pull-right"><i class="fa fa-arrow-right"></i></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="hr"></div>
+
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="panel panel-purple">
+						<div class="panel-heading">
+							<h5><i class="fa fa-bar-chart-o"></i> Bar Chart
+								<span class="pull-right">
+									<div class="dropdown">
+										<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+											Actions
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</span>
+							</h5>
+						</div>
+						<div class="panel-body">
+							<div id="morris-bar-chart"></div>
+						</div>
+						<div class="panel-footer">
+							<a href="#">View Details 
+								<span class="pull-right"><i class="fa fa-arrow-right"></i></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="hr"></div>
+
+			<h4 class="text-center font-weight-bold">Flot Charts</h4>
+			<div class="hr" style="margin: -10px;"><hr></div>
+
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="panel panel-purple">
+						<div class="panel-heading">
+							<h5><i class="fa fa-ellipsis-h"></i> Line Chart
+								<span class="pull-right">
+									<div class="dropdown">
+										<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+											Actions
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</span>
+							</h5>
+						</div>
+						<div class="panel-body">
+							<div class="flot-chart">
+                                <div class="flot-chart-content" id="flot-line-chart"></div>
+                            </div>
+						</div>
+						<div class="panel-footer">
+							<a href="#">View Details 
+								<span class="pull-right"><i class="fa fa-arrow-right"></i></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="panel panel-red">
+						<div class="panel-heading">
+							<h5><i class="fa fa-apple"></i> Pie Chart
+								<span class="pull-right">
+									<div class="dropdown">
+										<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+											Actions
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</span>
+							</h5>
+						</div>
+						<div class="panel-body">
+							<div class="flot-chart">
+                                <div class="flot-chart-content" id="flot-pie-chart"></div>
+                            </div>
+						</div>
+						<div class="panel-footer">
+							<a href="#">View Details 
+								<span class="pull-right"><i class="fa fa-arrow-right"></i></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="hr"></div>
+
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="panel panel-blue">
+						<div class="panel-heading">
+							<h5><i class="fa fa-ellipsis-v"></i> Multiple Axes Line Chart
+								<span class="pull-right">
+									<div class="dropdown">
+										<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+											Actions
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</span>
+							</h5>
+						</div>
+						<div class="panel-body">
+							<div class="flot-chart">
+                                <div class="flot-chart-content" id="flot-line-chart-multi"></div>
+                            </div>
+						</div>
+						<div class="panel-footer">
+							<a href="#">View Details 
+								<span class="pull-right"><i class="fa fa-arrow-right"></i></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="panel panel-green">
+						<div class="panel-heading">
+							<h5><i class="fa fa-signal"></i> Bar Chart
+								<span class="pull-right">
+									<div class="dropdown">
+										<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+											Actions
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</span>
+							</h5>
+						</div>
+						<div class="panel-body">
+							<div class="flot-chart">
+                                <div class="flot-chart-content" id="flot-bar-chart"></div>
+                            </div>
+						</div>
+						<div class="panel-footer">
+							<a href="#">View Details 
+								<span class="pull-right"><i class="fa fa-arrow-right"></i></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="hr"></div>
+
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="panel panel-red">
+						<div class="panel-heading">
+							<h5><i class="fa fa-stumbleupon"></i> Moving Line Chart
+								<span class="pull-right">
+									<div class="dropdown">
+										<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+											Actions
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</span>
+							</h5>
+						</div>
+						<div class="panel-body">
+							<div class="flot-chart">
+                                <div class="flot-chart-content" id="flot-line-chart-moving"></div>
+                            </div>
+						</div>
+						<div class="panel-footer">
+							<a href="#">View Details 
+								<span class="pull-right"><i class="fa fa-arrow-right"></i></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer text-center"></div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		
+	    <script src="assets/morrisjs/raphael/raphael.min.js"></script>
+	    <script src="assets/morrisjs/morris.min.js"></script>
+	    <script src="assets/js/morris-data.js"></script>
+
+	    <script src="assets/flot/excanvas.min.js"></script>
+	    <script src="assets/flot/jquery.flot.js"></script>
+	    <script src="assets/flot/jquery.flot.pie.js"></script>
+	    <script src="assets/flot/jquery.flot.resize.js"></script>
+	    <script src="assets/flot/jquery.flot.time.js"></script>
+	    <script src="assets/flot-tooltip/jquery.flot.tooltip.min.js"></script>
+	    <script src="assets/js/flot-data.js"></script>
+
+		<script src="assets/js/base.js"></script>
+	</body>
+</html>
